@@ -1,0 +1,11 @@
+thumbs.db
+__pycache__
+!/nginx/temp
+/nginx/temp/client_body_temp
+/nginx/temp/fastcgi_temp
+/nginx/temp/proxy_temp
+/nginx/temp/scgi_temp
+/nginx/temp/uwsgi_temp
+/nginx/logs/error.log
+/nginx/logs/nginx.pid
+/nginx/logs/access.log

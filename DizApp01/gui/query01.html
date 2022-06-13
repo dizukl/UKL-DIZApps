@@ -1,0 +1,82 @@
+<div style="width: 100%;">
+<form method="post" action="/exec_fhir_query" target="_blank">
+<input type="hidden" id="newQuery" name="newQuery" value="newQuery"></input>
+<table>
+<tr>
+<td valign="top"><table>
+<tr>
+<td>
+FHIR-Server:
+</td>
+<td colspan=3>
+<select id="fhirServer" name="fhirServer" required style="">
+<dizapp01_ph01 />
+</select>
+</td>
+</tr>
+<tr>
+<td valign="top">Login:</td>
+<td valign="top"><input type="text" id="fhirServerLogin" name="fhirServerLogin"></input></td>
+<td valign="top">Password:</td>
+<td valign="top"><input type="password" id="fhirServerPw" name="fhirServerPw"></input></td>
+</tr>
+<tr>
+<td valign="top">Use Preset Login:</td>
+<td valign="top"><input type="checkbox" id="usePresetLogin" name="usePresetLogin"></input></td>
+</tr>
+<tr>
+<td valign="top">Page Size:</td>
+<td valign="top"><input type="number" min="0" max="1000" value="20" id="resultPageSize" name="resultPageSize"></input></td>
+</tr>
+</table></td>
+<td><div style="width: 40px;"></div></td>
+<td><table>
+<tr>
+<td valign="top"><table>
+<tr>
+<td>Output Mode:</td>
+<td><select id="outputMode" name="outputMode" required style="">
+<option value="outputMode01">Raw</option>
+<option value="outputMode02">Raw (Separate Resources)</option>
+<option value="outputMode03">Structured</option>
+<option value="outputMode04">Table (simple)</option>
+<option value="outputMode05" selected>Table (fully flattened)</option>
+</select></td>
+</tr><tr>
+<td valign="top">Export Result:</td><td valign="top">
+<input type="radio" id="noExp" value="noExp" name="exportResultMode" checked></input><label for="noExp">No Export</label><br />
+<input type="radio" id="expPage" value="expPage" name="exportResultMode"></input><label for="expPage">Page Export</label><br />
+</td></tr>
+</table></td>
+<td valign="top"><table style="border-left: 1px solid black; border-right: 1px solid black;">
+<tr><td>Omit Meta Elements:</td><td><input type="checkbox" id="omitMeta" value="omitMeta" name="omitMeta"></input></td></tr>
+<tr><td>Omit Text Elements:</td><td><input type="checkbox" id="omitText" value="omitText" name="omitText" checked></input></td></tr>
+<tr><td>Omit Identifier Type Elements:</td><td><input type="checkbox" id="omitIdentifierType" value="omitIdentifierType" name="omitIdentifierType"></input></td></tr>
+</table></td>
+<td style="width:20px;"></td>
+<td valign="top"><table>
+<tr><td valign="top">Extended Result Exporting:</td><td valign="top"></td></tr>
+<tr><td valign="top"><input type="radio" id="expFull" value="expFull" name="exportResultMode"></input>
+<label for="expFull" style="background:#ffaaaa;">Full Export (! use carefully !)</label></td>
+</tr>
+<tr><td valign="top"><input type="checkbox" id="resultDownloadDirectly" value="resultDownloadDirectly" name="resultDownloadDirectly"></input>
+<label for="resultDownloadDirectly">Download Result Directly</label></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table style="width: 100%;">
+<tr><td style="width: 100%;">
+FHIR-Search-Parameter:
+</td></tr>
+<tr><td style="width: 100%;">
+<textarea id="queryStatement" name="searchParameters" style="width: 100%; height: 300px"><dizapp01_ph02 /></textarea>
+</td></tr>
+<tr><td style="width: 100%">
+<input value="Ausführen" type=submit></input>
+</td></tr>
+</table>
+</form>
+</div>

@@ -1,0 +1,16 @@
+.gitignore
+.travis.yml
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+test_flatten.py
+.github/PULL_REQUEST_TEMPLATE.md
+flatten_json/__init__.py
+flatten_json.egg-info/PKG-INFO
+flatten_json.egg-info/SOURCES.txt
+flatten_json.egg-info/dependency_links.txt
+flatten_json.egg-info/entry_points.txt
+flatten_json.egg-info/requires.txt
+flatten_json.egg-info/top_level.txt
