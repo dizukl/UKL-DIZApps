@@ -2,7 +2,28 @@
 
 The DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
 
-[[_TOC_]]
+- [DIZApps](#dizapps)
+  * [Description](#description)
+  * [Installation and Running](#installation-and-running)
+    + [General information](#general-information)
+    + [Windows](#windows)
+      - [Simple Startup](#simple-startup)
+      - [Windows Service](#windows-service)
+    + [Linux](#linux)
+    + [Docker](#docker)
+  * [Configuration](#configuration)
+    + [Config for DizApp01](#config-for-dizapp01)
+      - [Core config items](#core-config-items)
+      - [Nginx config](#nginx-config)
+      - [Predefined auth data](#predefined-auth-data)
+  * [Usage](#usage)
+    + [DIZApp01 - FHIR Query Tool](#dizapp01---fhir-query-tool)
+    + [Using the app with a web browser](#using-the-app-with-a-web-browser)
+    + [Using the app REST interface with generic tools](#using-the-app-rest-interface-with-generic-tools)
+  * [Support](#support)
+  * [TODO](#todo)
+  * [Contributing](#contributing)
+  * [License](#license)
 
 ## Description
 DIZApps is an app collection providing some tools for handling DIZ data. 
