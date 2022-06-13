@@ -2,7 +2,7 @@
 
 The DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
 
-[TOC]
+[[__TOC__]]
 
 ## Description
 DIZApps is an app collection providing some tools for handling DIZ data. 
