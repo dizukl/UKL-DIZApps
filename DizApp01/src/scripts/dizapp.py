@@ -532,6 +532,15 @@ def favicon():
 
 ### Main section ###
 
+#### Threads started by main entry point ###
+
+def runServer():
+    serve(app, host='127.0.0.1', port=app.app_config['appServerPort'])
+
+def runBrowser():
+    webbrowser.open('http://localhost:' + app.app_config['appServerPort'])
+
+
 #### Main entry point ###
 
 if __name__ == '__main__':
@@ -558,7 +567,9 @@ if __name__ == '__main__':
                     app.fhirServers[pref] = {}
                 app.fhirServers[pref][suff] = val 
 
-    print("Starting server ...")
-    serve(app, host='127.0.0.1', port=app.app_config['appServerPort'])
+    serverThread = threading.Thread(target=runServer)
+    serverThread.start()
+
+    print("Test")
 
 ### End of Main entry point ###
