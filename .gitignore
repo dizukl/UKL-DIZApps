@@ -9,4 +9,4 @@ __pycache__
 /nginx/logs/error.log
 /nginx/logs/nginx.pid
 /nginx/logs/access.log
-
+test.cmd
