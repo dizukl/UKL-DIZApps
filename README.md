@@ -52,7 +52,7 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 
 ### Running on Windows
 #### Simple Startup
-From the folder you unpacked the archive file just start the **DizApp01.exe** file. See below for the configuration opportunities.
+From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities.
 
 The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
