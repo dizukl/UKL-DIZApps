@@ -30,8 +30,8 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
       - [Predefined auth data](#predefined-auth-data)
   * [Usage](#usage)
     + [DIZApp01 - FHIR Query Tool](#dizapp01---fhir-query-tool)
-    + [Using the app with a web browser](#using-the-app-with-a-web-browser)
-    + [Using the app REST interface with generic tools](#using-the-app-rest-interface-with-generic-tools)
+      - [Using the app with a web browser](#using-the-app-with-a-web-browser)
+      - [Using the app REST interface with generic tools](#using-the-app-rest-interface-with-generic-tools)
   * [Support](#support)
   * [TODO](#todo)
   * [Contributing](#contributing)
@@ -156,11 +156,13 @@ When installed and started (see section "Installation and Running"), the app act
 
 The app web service listens to HTTP requests locally (localhost; 127.0.0.1) at the port defined in dizapp01.conf (default: 8071). It listens to HTTPS requests at the port given in the Nginx config in the separate nginx subdirectory (default: 8070).
 
-### Using the app with a web browser
-Point your web browser to 
+#### Using the app with a web browser
+In Workstation mode (see the configuration section), after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
+
+For opening the start page manually, point your web browser to 
 - [http://localhost:8071](http://localhost:8071) or
 - [https://\<hostname\>:8070](https://\<hostname\>:8070)  
-Change the default port numbers according to your config.
+Use other port numbers, if they were changed in the config of your installation.
 
 Fill in and adjust the query parameters.
 
@@ -170,7 +172,7 @@ Query results are opened in separate browser tabs/windows.
 
 [![Query result example](./doc/doc002_small.png)](./doc/doc002.png)
 
-### Using the app REST interface with generic tools
+#### Using the app REST interface with generic tools
 You may call the query interface of the app via generic REST calls. Parameters have to be provided via POST method.
 
 |Parameter name|Example value|
