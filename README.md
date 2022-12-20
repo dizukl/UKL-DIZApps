@@ -25,17 +25,19 @@ Nginx is used to wrap SSL around the apps.
 
 ### Windows
 #### Simple Startup
-Download the project tree and just start the **DizAppXX.exe** file from the DizAppXX folder (currently only DizApps01.exe in the DizApps01 folder). See below for the configuration opportunities.
+Download the project tree and just start the **DizApp01.exe** file from the root folder . See below for the configuration opportunities.
 
-The DizAppXX.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
+The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
-DizAppXX.exe also kills the corresponding Python and Nginx processes when being closed itself. 
+DizApp01.exe also kills the corresponding Python and Nginx processes when being closed itself. 
 ATTENTION: This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
 
 #### Windows Service
-A DizAppXX may be executable as a Windows service. Then the DizAppXX folder contains a **DizAppXXService.exe**. The service executable can be activated/installed using the **DizAppXXInstallService.exe** tool - or using your favorite other system management tools.
+DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
 
-DizAppXXInstallService.exe runs without parameters to install the Windows service. It takes the parameter 'remove' from the command line to remove the service.
+The service can be activated/installed using the **DizApp01InstallService.exe** tool. To remove the service use the **DizApp01RemoveService.exe** tool. Alternatively, you may use your favorite other system management tools to install or remove the service.
+
+DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
 ### Linux
 A deployment for Linux based usage of DIZApps will be available within May 2022.
