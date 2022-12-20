@@ -13,8 +13,8 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
 
 ## Content
 - [UKL-DIZApps](#ukl-dizapps)
-  * [Content](#content)
   * [Description](#description)
+  * [Content](#content)
   * [Installation and Running](#installation-and-running)
     + [Downloading](#downloading)
     + [Running on Windows](#running-on-windows)
