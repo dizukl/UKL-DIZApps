@@ -40,16 +40,16 @@ The service can be activated/installed using the **DizApp01InstallService.exe** 
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
 ### Linux
-A deployment for Linux based usage of DIZApps will be available within May 2022.
+A deployment for Linux based usage of DIZApps will be available soon.
 
 ### Docker
-A deployment for Docker based usage of DIZApps will be available within May 2022.
+A deployment for Docker based usage of DIZApps will be available soon.
 
 ## Configuration
-Each DizAppXX folder contains a  
-**dizappXX.conf**   
+The DizApp01 folder contains a  
+**dizapp01.conf**   
 file.  
-We tried to name the configuration elements in a self explaining way and provided some comments explaining the configuration. 
+The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration. 
 
 ### Config for DizApp01
 #### Core config items
@@ -57,19 +57,26 @@ We tried to name the configuration elements in a self explaining way and provide
 # App Server Settings
 
 ## The app engine runs as a webserver based on the Python Flask module.
-## It listens at localhost / 127.0.0.0 using the port given here. Access from other machines is provided via Nginx - see the separate NGinx config files. 
-appServerPort: 8095
+##   It listens at localhost / 127.0.0.0 using the appServerPort given here. 
+## Access from other machines using SSL is provided via Nginx - see the 
+##   separate NGinx config files, e. g. for the port Nginx is listening on.
+##   CAUTION: The Nginx settings must match the appServerPort and the 
+##   appSslServerPort given here.
+##   You may add additional access settings, e. g. basic auth, in the Nginx
+##   config.
+appServerPort: 8071
+appSslServerPort: 8070
 
 ## Valid appModes are: Server|Workstation
-## In Workstation mode, after starting the server engine, the default webbrowser 
-## of the current user is opened with the start page of the app.
-## In Server mode, this step is skipped, but a nginx is started for wrapping SSL around the app.
-appMode: Server
+##   In Workstation mode, after starting the server engine, the default webbrowser 
+##   of the current user is called with the start page of the app.
+##   This feature is only available when using DIZApp01.exe for starting the app.
+##   Otherwise Server mode is assumed and the browser call is skipped.
+appMode: Workstation
 
 # FHIR server settings
 defaultFhirServer: fhirServer001
 
-<External FHIR servers for testing...>
 fhirServer001_name: Firely Demo Server R4
 fhirServer001_url: https://server.fire.ly
 fhirServer001_port: 443
@@ -78,18 +85,7 @@ fhirServer001_timeout: 60
 fhirServer001_verifySsl: False
 fhirServer001_applyFirelyPageLinkCorrection: True
 
-<Some additional test FHIR servers are defined in the predefined config. >
-
-<Don't forget to define your own local FHIR servers.>
-fhirServer101_name: 
-fhirServer101_url: 
-fhirServer101_port: 
-fhirServer101_path: 
-fhirServer101_timeout: 
-fhirServer101_verifySsl: 
-fhirServer101_applyFirelyPageLinkCorrection: 
-
-fhirServer102_name: <...>
+fhirServer002_name: <...>
 <...>
 
 # Misc settings
@@ -104,14 +100,17 @@ defaultFhirSearchString: Patient?identifier=1234567890
 ## If applying the UTF8-BOM, some older applications may deny proper reading of the CSV files.
 csvExportApplyUtf8BomTag: True
 ```
-#### Nginx config
-For the configuration of the Nginx bundled here see the config files in the nginx folder. The predefined config provided here defines port 8094 for listening and a self signed certificate-key-pair for the SSL connections.
 
-Please adjust the Nginx config according to your needs. For example, you may want to configure authentification methods. For documentation see the Nginx pages in the Web.
+#### Nginx config
+For the configuration of the Nginx bundled here see the config files in the nginx folder. For example, the predefined config provided here defines port 8070 for listening.
+
+Please adjust the Nginx config according to your needs. For example, you may want to configure authentification methods and certificates. For documentation see the Nginx pages in the Web.
+
+**CAUTION:** The predefined config provided here contains a self signed certificate-key-pair for the SSL connections. It is highly recommended to replace the certificate/key by your own trustworthy files. 
 
 #### Predefined auth data
-DizApp01 uses basic auth for authenticating to FHIR servers (other methods will follow). Login data can be entered to the GUI but may also be predefined. This may be useful when using the app in server mode.
-The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want. Be careful with the access rights! 
+DizApp01 can be configured to use basic auth for authenticating to FHIR servers. Other methods will be provided in future releases. Login data can be entered to the GUI but may also be predefined. This may be useful when using the app in server mode.
+The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want.  **CAUTION:** Be careful with the access rights! 
 
 ## Usage
 
@@ -120,12 +119,12 @@ The app runs FHIR search queries to FHIR servers that are configured in the app 
 
 When installed and started (see section "Installation and Running"), the app acts as a web service that can be accessed via up-to-date web browsers or other REST enabled tools like Postman.
 
-The app web service listens to HTTP requests locally (localhost; 127.0.0.1) at the port defined in dizapp01.conf (default: 8095). It listens to HTTPS requests at the port given in the Nginx config in the separate nginx subdirectory (default: 8094).
+The app web service listens to HTTP requests locally (localhost; 127.0.0.1) at the port defined in dizapp01.conf (default: 8071). It listens to HTTPS requests at the port given in the Nginx config in the separate nginx subdirectory (default: 8070).
 
 ### Using the app with a web browser
 Point your web browser to 
-- http://localhost:8095 or
-- https://<hostname>:8094  
+- http://localhost:8071 or
+- https://<hostname>:8070  
 Change the default port numbers according to your config.
 
 ![image.png](./image.png)
