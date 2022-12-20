@@ -75,10 +75,9 @@ A deployment for Linux based usage of DIZApps will be available soon.
 A deployment for Docker based usage of DIZApps will be available soon.
 
 ## Configuration
-The DizApp01 folder contains a  
-**dizapp01.conf**   
-file.  
-The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration. 
+The DizApp01 folder contains a **dizapp01.conf** file. The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration.
+
+If you change the configuration while the app / the service is running, restart it to apply the changes.
 
 ### Config for DizApp01
 #### Core config items
