@@ -9,7 +9,6 @@ Current release: 2022-12-19
   * [Content](#content)
   * [Description](#description)
   * [Installation and Running](#installation-and-running)
-    + [General information](#general-information)
     + [Downloading](#downloading)
     + [Running on Windows](#running-on-windows)
       - [Simple Startup](#simple-startup)
