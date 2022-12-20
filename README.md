@@ -31,11 +31,11 @@ Current release: 2022-12-19
   * [License](#license)
 
 ## Description
-UKL-DIZApps is a tool collection providing some tools for handling FHIR data. 
+UKL-DIZApps is a tool collection for handling FHIR data without knowledge about software creation. 
 
 Currently there is only one toolgroup provided with UKL-DIZApps. 
-- DIZApp01 - FHIR Query Tool  
-The app runs FHIR search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface.
+- **DIZApp01 - FHIR Query Tool**  
+The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [a link](https://hl7.org/fhir/search.html).
 
 Other Apps will follow.
 
