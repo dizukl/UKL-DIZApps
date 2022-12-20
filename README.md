@@ -5,7 +5,30 @@ The UKL-DIZApps provided here were developed in a project granted by the Federal
 Current release: 2022-12-19
 
 ## Content
-[[_TOC_]]
+- [UKL-DIZApps](#ukl-dizapps)
+  * [Content](#content)
+  * [Description](#description)
+  * [Installation and Running](#installation-and-running)
+    + [General information](#general-information)
+    + [Downloading](#downloading)
+    + [Windows](#windows)
+      - [Simple Startup](#simple-startup)
+      - [Windows Service](#windows-service)
+    + [Linux](#linux)
+    + [Docker](#docker)
+  * [Configuration](#configuration)
+    + [Config for DizApp01](#config-for-dizapp01)
+      - [Core config items](#core-config-items)
+      - [Nginx config](#nginx-config)
+      - [Predefined auth data](#predefined-auth-data)
+  * [Usage](#usage)
+    + [DIZApp01 - FHIR Query Tool](#dizapp01---fhir-query-tool)
+    + [Using the app with a web browser](#using-the-app-with-a-web-browser)
+    + [Using the app REST interface with generic tools](#using-the-app-rest-interface-with-generic-tools)
+  * [Support](#support)
+  * [TODO](#todo)
+  * [Contributing](#contributing)
+  * [License](#license)
 
 ## Description
 UKL-DIZApps is a tool collection providing some tools for handling FHIR data. 
