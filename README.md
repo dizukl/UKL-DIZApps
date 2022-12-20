@@ -2,6 +2,9 @@
 
 The DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
 
+Current release: 2022-12-19
+
+## Content
 [[_TOC_]]
 
 ## Description
@@ -127,11 +130,11 @@ Point your web browser to
 - https://<hostname>:8070  
 Change the default port numbers according to your config.
 
-![image.png](./image.png)
+![FHIR Search query settings](./doc/doc001.png)
 
 Query results are opened in separate browser tabs/windows.
 
-![image-1.png](./image-1.png)
+![Query result example](./doc/doc002.png)
 
 ### Using the app REST interface with generic tools
 You may call the query interface of the app via generic REST calls. Parameters have to be provided via POST method.
