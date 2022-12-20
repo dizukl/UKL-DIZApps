@@ -40,19 +40,10 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
 Other Apps will follow.
 
 ## Installation and Running
-### General information
-DIZApp01 is provided including the 3rd party tools needed to start/use them: 
-- Python and 
-- Nginx. 
-
-The core code is written in python. From the Python environment that is bundled here some components that are not needed have been removed. 
-
-Nginx is used to wrap SSL around the apps. 
-
 ### Downloading
 Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
 
-### Windows
+### Running on Windows
 #### Simple Startup
 From the folder you unpacked the archive file just start the **DizApp01.exe** file. See below for the configuration opportunities.
 
@@ -68,14 +59,23 @@ The service can be installed and run using the **DizApp01InstallService.exe** to
 
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
-### Linux
-A deployment for Linux based usage of DIZApps will be available soon.
+### Running on Linux
+A deployment for Linux based usage of DIZApp01 will be available soon.
 
-### Docker
-A deployment for Docker based usage of DIZApps will be available soon.
+### Running on Docker
+A deployment for Docker based usage of DIZApp01 will be available soon.
+
+### Additional information
+DIZApp01 is provided including the 3rd party tools needed to start/use them: 
+- Python and 
+- Nginx. 
+
+The core code is written in python. From the Python environment that is bundled here some components that are not needed have been removed. 
+
+Nginx is used to wrap SSL around the apps. 
 
 ## Configuration
-The DizApp01 folder contains a **dizapp01.conf** file. The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration.
+The DizApp01 subfolder contains a **dizapp01.conf** file. The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration.
 
 If you change the configuration while the app / the service is running, restart it to apply the changes.
 
