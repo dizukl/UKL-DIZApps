@@ -35,7 +35,7 @@ UKL-DIZApps is a tool collection for handling FHIR data without knowledge about 
 
 Currently there is only one toolgroup provided with UKL-DIZApps. 
 - **DIZApp01 - FHIR Query Tool**  
-The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [a link](https://hl7.org/fhir/search.html).
+The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
 
 Other Apps will follow.
 
@@ -152,16 +152,16 @@ The app web service listens to HTTP requests locally (localhost; 127.0.0.1) at t
 
 ### Using the app with a web browser
 Point your web browser to 
-- http://localhost:8071 or
-- https://\<hostname\>:8070  
+- [http://localhost:8071](http://localhost:8071) or
+- [https://\<hostname\>:8070](https://\<hostname\>:8070)  
 Change the default port numbers according to your config.
 
-<img alt="FHIR Search query settings" src="doc/doc001.png" width=300 align=left>
-
+<img alt="FHIR Search query settings" src="doc/doc001.png" width=300 align=left>  
+  
 Query results are opened in separate browser tabs/windows.
 
-![Query result example](./doc/doc002.png)
-
+<img alt="Query result example" src="doc/doc002.png" width=300 align=left>  
+  
 ### Using the app REST interface with generic tools
 You may call the query interface of the app via generic REST calls. Parameters have to be provided via POST method.
 
