@@ -161,7 +161,8 @@ In Workstation mode (see the configuration section), after starting the server e
 
 For opening the start page manually, point your web browser to 
 - [http://localhost:8071](http://localhost:8071) or
-- [https://\<hostname\>:8070](https://\<hostname\>:8070)  
+- [https://\<hostname\>:8070](https://\<hostname\>:8070)
+
 Use other port numbers, if they were changed in the config of your installation.
 
 Fill in and adjust the query parameters.
