@@ -8,27 +8,30 @@ Current release: 2022-12-19
 [[_TOC_]]
 
 ## Description
-UKL-DIZApps is an app collection providing some tools for handling DIZ data. 
+UKL-DIZApps is a tool collection providing some tools for handling FHIR data. 
 
-Currently there is only one App provided with UKL-DIZApps. 
-- DIZApps01 - FHIR Query Tool  
-The app runs FHIR search queries to FHIR server that are configured in the app config. The query results can be presented in different formats (FHIR json, structured HTML, flat tables).
+Currently there is only one toolgroup provided with UKL-DIZApps. 
+- DIZApp01 - FHIR Query Tool
+The app runs FHIR search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface.
 
 Other Apps will follow.
 
 ## Installation and Running
 ### General information
-UKL-DIZApps are provided including the 3rd party tools needed to start/use them: 
+DIZApp01 is provided including the 3rd party tools needed to start/use them: 
 - Python and 
 - Nginx. 
 
-The core code of UKL-DIZApps is written in python. From the Python environment bundled here some components that are not needed have been removed. 
+The core code is written in python. From the Python environment that is bundled here some components that are not needed have been removed. 
 
 Nginx is used to wrap SSL around the apps. 
 
+### Downloading
+Choose an archive file (**DIZApp01_????-??-??.???**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
+
 ### Windows
 #### Simple Startup
-Download the project tree and just start the **DizApp01.exe** file from the root folder . See below for the configuration opportunities.
+From the folder you unpacked the archive file just start the **DizApp01.exe** file. See below for the configuration opportunities.
 
 The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
@@ -38,7 +41,7 @@ CAUTION: This closing behaviour may fail on systems with a very high CPU load; W
 #### Windows Service
 DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
 
-The service can be activated/installed using the **DizApp01InstallService.exe** tool. To remove the service use the **DizApp01RemoveService.exe** tool. Alternatively, you may use your favorite other system management tools to install or remove the service.
+The service can be installed and run using the **DizApp01InstallService.exe** tool. To remove the service use the **DizApp01RemoveService.exe** tool. Alternatively, you may use your favorite other system management tools to install or remove the service.
 
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
