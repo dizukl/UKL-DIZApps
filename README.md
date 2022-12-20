@@ -153,10 +153,10 @@ The app web service listens to HTTP requests locally (localhost; 127.0.0.1) at t
 ### Using the app with a web browser
 Point your web browser to 
 - http://localhost:8071 or
-- https://<hostname>:8070  
+- https://\<hostname\>:8070  
 Change the default port numbers according to your config.
 
-![FHIR Search query settings](./doc/doc001.png)
+<img alt="FHIR Search query settings" src="doc/doc001.png" width=300 align=left>
 
 Query results are opened in separate browser tabs/windows.
 
