@@ -33,7 +33,7 @@ Download the project tree and just start the **DizApp01.exe** file from the root
 The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
 DizApp01.exe also kills the corresponding Python and Nginx processes when being closed itself. 
-ATTENTION: This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
+CAUTION: This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
 
 #### Windows Service
 DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
