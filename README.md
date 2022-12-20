@@ -156,6 +156,8 @@ Point your web browser to
 - [https://\<hostname\>:8070](https://\<hostname\>:8070)  
 Change the default port numbers according to your config.
 
+Fill in and adjust the query parameters.
+
 [![FHIR Search query settings](./doc/doc001_small.png)](./doc/doc001.png)
 
 Query results are opened in separate browser tabs/windows.
