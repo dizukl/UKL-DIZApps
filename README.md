@@ -50,7 +50,7 @@ The core code is written in python. From the Python environment that is bundled 
 Nginx is used to wrap SSL around the apps. 
 
 ### Downloading
-Choose an archive file (**DIZApp01_????-??-??.???**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
+Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
 
 ### Windows
 #### Simple Startup
