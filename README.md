@@ -156,11 +156,11 @@ Point your web browser to
 - [https://\<hostname\>:8070](https://\<hostname\>:8070)  
 Change the default port numbers according to your config.
 
-![FHIR Search query settings](./doc/doc001.png =300x50)
+![FHIR Search query settings](./doc/doc001.png)
 
 Query results are opened in separate browser tabs/windows.
 
-![Query result example](./doc/doc002.png =300x150)
+![Query result example](./doc/doc002.png)
 
 ### Using the app REST interface with generic tools
 You may call the query interface of the app via generic REST calls. Parameters have to be provided via POST method.
