@@ -1,6 +1,6 @@
-# DIZApps
+# UKL-DIZApps
 
-The DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
+The UKL-DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
 
 Current release: 2022-12-19
 
@@ -8,21 +8,21 @@ Current release: 2022-12-19
 [[_TOC_]]
 
 ## Description
-DIZApps is an app collection providing some tools for handling DIZ data. 
+UKL-DIZApps is an app collection providing some tools for handling DIZ data. 
 
-Currently there is only one App provided with DIZApps. 
+Currently there is only one App provided with UKL-DIZApps. 
 - DIZApps01 - FHIR Query Tool  
 The app runs FHIR search queries to FHIR server that are configured in the app config. The query results can be presented in different formats (FHIR json, structured HTML, flat tables).
 
-Other DIZApps will follow.
+Other Apps will follow.
 
 ## Installation and Running
 ### General information
-DIZApps are provided including the 3rd party tools needed to start/use them: 
+UKL-DIZApps are provided including the 3rd party tools needed to start/use them: 
 - Python and 
 - Nginx. 
 
-The core code of DIZApps is written in python. From the Python environment bundled here some components that are not needed have been removed. 
+The core code of UKL-DIZApps is written in python. From the Python environment bundled here some components that are not needed have been removed. 
 
 Nginx is used to wrap SSL around the apps. 
 
@@ -166,5 +166,5 @@ Please contact DIZ@medizin.uni-leipzig.de.
 We are open to contributions from our partners within the SMITH consortium and the Medical Informatics Initiative (MII). Please contact us via DIZ@medizin.uni-leipzig.de to discuss and arrange contributions together. 
 
 ## License
-DIZApps code and config files are licensed with the GNU GENERAL PUBLIC LICENSE.
-For additional tools bundled with DIZApps (Python, Nginx) see their separate license files.
+UKL-DIZApps code and config files are licensed with the GNU GENERAL PUBLIC LICENSE.
+For additional tools bundled with UKL-DIZApps (Python, Nginx) see their separate license files.
