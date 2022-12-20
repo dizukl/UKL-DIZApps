@@ -173,8 +173,10 @@ Query results are opened in separate browser tabs/windows.
 
 [![Query result example](./doc/doc002_small.png)](./doc/doc002.png)
 
-#### Using the app REST interface with generic tools
-You may call the query interface of the app via generic REST calls. Parameters have to be provided via POST method.
+#### Using the app via REST interface 
+Instead of using the app GUI via web browser, you may call the query interface of the app via REST calls. So you could integrate the app into a tool chain, for example to convert FHIR search query results to CSV format "on the fly".
+
+Parameters for the REST calls have to be provided via POST method.
 
 |Parameter name|Example value|
 |---|---|
