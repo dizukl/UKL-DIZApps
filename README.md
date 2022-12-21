@@ -23,7 +23,7 @@ For information about FHIR Search see [https://hl7.org/fhir/search.html](https:/
 - [UKL-DIZApps - FHIR Search and Transformation Tool (FST&sup2;)](#ukl-dizapps-fhir-search-and-transformation-tool-fst)
   * [Description](#description)
   * [Content](#content)
-  * Downloading and Running](#downloading-and-running)
+  * [Downloading and Running](#downloading-and-running)
     + [Downloading](#downloading)
     + [Running on Windows](#running-on-windows)
       - [Simple Startup](#simple-startup)
