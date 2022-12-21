@@ -62,15 +62,15 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 #### Simple Startup
 From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
-Closing behaviour:  
-When being closed itself, DizApp01.exe also kills the corresponding Python and Nginx processes. This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
-
 #### Windows Service
 DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
 
 The service can be installed and run using the **DizApp01InstallService.exe** tool. To remove the service use the **DizApp01RemoveService.exe** tool. Alternatively, you may use your favorite other system management tools to install or remove the service.
 
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
+
+#### Stopping Behaviour
+When being closed/stopped, DizApp01.exe and DizApp01Service.exe also stop their corresponding Python and Nginx processes. This stopping behaviour may fail on systems with a very high CPU load; usually Windows grants a 5 seconds period of time before running into a timeout. 
 
 ### Running on Linux
 A deployment for Linux based usage of DIZApp01 will be available soon.
@@ -83,9 +83,9 @@ DIZApp01 is provided including the 3rd party tools needed to start/use them:
 - Python and 
 - Nginx. 
 
-The core code is written in python. From the Python environment that is bundled here some components that are not needed have been removed. 
+The core code of DIZApp01 is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
 
-Nginx is used to wrap SSL around the apps. 
+Nginx is used to wrap SSL around the apps, so that secure access can be configured. 
 
 ## Configuration
 The DizApp01 subfolder contains a **dizapp01.conf** file. The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration.
