@@ -62,6 +62,8 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 #### Simple Startup
 From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
+DIZApp01 can be configured to run in workstation mode or server mode (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
+
 #### Windows Service
 DizApp01 may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
 
@@ -152,14 +154,14 @@ Please adjust the Nginx config according to your needs. For example, you may wan
 **CAUTION:** The predefined config provided here contains a self signed certificate-key-pair for the SSL connections. It is highly recommended to replace the certificate/key by your own trustworthy files. 
 
 #### Auth data
-DizApp01 can be configured to use Basic Auth or Client Cert Auth to FHIR servers.
-
+DizApp01 can be configured to use **Basic Auth**, **Client Cert Auth** to FHIR servers - if needed.
 - Login data for Basic Auth can be entered to the GUI but may also be predefined. 
 - Login data for Client Cert Auth can only be predefined. 
 
-Predefining auth data may especially be useful when using the app in server mode; it is mandatory when a FHIR server needs Client Cert Auth.
 The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want.  
 **CAUTION:** Be careful with the access rights of the predefined auth data! 
+
+Predefining auth data may especially be useful when using the app in server mode; it is mandatory in server mode and workstation mode when a FHIR server needs Client Cert Auth.
 
 ## Usage
 
