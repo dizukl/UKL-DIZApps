@@ -5,7 +5,7 @@ The UKL-DIZApps provided here were developed in a project granted by the Federal
 Current release: 2022-12-19
 
 ## Description
-UKL-DIZApps is a tool collection for handling FHIR data without knowledge about software creation. 
+UKL-DIZApps is a tool collection for handling FHIR data without knowledge about scripting or software development. 
 
 Currently there is one toolgroup provided with UKL-DIZApps. 
 - **DIZApp01 - FHIR Query Tool**  
