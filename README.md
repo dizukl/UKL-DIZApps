@@ -31,7 +31,7 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
     + [Running on Docker](#running-on-docker)
     + [Additional information](#additional-information)
       - [3rd party tools](#3rd-party-tools)
-
+      - [Security](#security)
   * [Configuration](#configuration)
     + [Config for DizApp01](#config-for-dizapp01)
       - [Core config items](#core-config-items)
