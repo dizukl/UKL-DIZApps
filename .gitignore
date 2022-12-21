@@ -10,3 +10,4 @@ __pycache__
 /nginx/logs/nginx.pid
 /nginx/logs/access.log
 test.cmd
+DizApp01/src/scripts/dizapp.bak
