@@ -66,6 +66,12 @@ From the folder you unpacked the archive to just start the **DizApp01.exe** file
 
 FST&sup2; can be configured to run in **workstation mode** or **server mode** (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
 
+For opening the start page manually, point your web browser to 
+- [http://localhost:8071](http://localhost:8071) or
+- [https://\<hostname\>:8070](https://\<hostname\>:8070)
+
+Use other port numbers, if they were changed in the config of your installation.
+
 #### Windows Service
 FST&sup2; may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
 
