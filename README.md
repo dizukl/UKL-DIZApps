@@ -21,7 +21,7 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
 - [UKL-DIZApps - FHIR Search and Transformation Tool (FST&sup2;)](#ukl-dizapps-fhir-search-and-transformation-tool-fst)
   * [Description](#description)
   * [Content](#content)
-  * [Installation and Running](#installation-and-running)
+  * Downloading and Running](#downloading-and-running)
     + [Downloading](#downloading)
     + [Running on Windows](#running-on-windows)
       - [Simple Startup](#simple-startup)
@@ -45,15 +45,6 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
   * [TODO](#todo)
   * [Contributing](#contributing)
   * [License](#license)
-
-## Description
-UKL-DIZApps is a tool collection for handling FHIR data without knowledge about software creation. 
-
-Currently there is only one toolgroup provided with UKL-DIZApps. 
-- **FST&sup2; - FHIR Search and Transformation Tool**  
-The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
-
-Other Apps will follow.
 
 ## Downloading and Running
 ### Downloading
