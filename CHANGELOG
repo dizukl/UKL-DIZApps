@@ -1,0 +1,7 @@
+Release 2022-12-19
+- Added Client Cert Auth method for authenticating the DIZApp01 backend to FHIR servers
+- Some fixes in README.md and GUI HTML pages
+
+Release 2022-12-19
+- Initial Release
+

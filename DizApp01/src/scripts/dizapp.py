@@ -222,10 +222,11 @@ def exec_fhir_query():
     fhirServer_url_params = fhirServer_url + fhirServer_params
     # Create FHIR server authentication data
     fhirServer_user_pass = ''
+    fhirServer_cert_key = None
     try:
-        #if p['fhirServerLogin'] == '':
         if 'usePresetLogin' in p:
             fhirServer_user_pass = c[p['fhirServer']+'_user'] + ':' + c[p['fhirServer']+'_pw']
+            fhirServer_cert_key = (c[p['fhirServer']+'_clientCert'], c[p['fhirServer']+'_clientKey'])
         else:
             fhirServer_user_pass = p['fhirServerLogin'] + ':' + p['fhirServerPw']
         fhirServer_user_pass = b64encode(fhirServer_user_pass.encode('ascii')).decode('ascii')
@@ -245,10 +246,10 @@ def exec_fhir_query():
         while not queryProcessFinished:
             if (newQuery) and (not isIdQuery):
                 requestHeaders = { 'Authorization' : authData, 'Accept' : 'application/fhir+json', 'content-type' : contentType }
-                r_raw = requests.post(url=fhirServer_url_params, headers=requestHeaders, verify=('False'!=c[p['fhirServer']+'_verifySsl']), data=requestData, timeout=int(c[p['fhirServer']+'_timeout']))
+                r_raw = requests.post(url=fhirServer_url_params, headers=requestHeaders, cert=fhirServer_cert_key, verify=('False'!=c[p['fhirServer']+'_verifySsl']), data=requestData, timeout=int(c[p['fhirServer']+'_timeout']))
             else:
                 requestHeaders = { 'Authorization' : authData, 'Accept' : 'application/fhir+json' }
-                r_raw = requests.get(url=fhirServer_url_params, headers=requestHeaders, verify=('False'!=c[p['fhirServer']+'_verifySsl']), timeout=int(c[p['fhirServer']+'_timeout']))
+                r_raw = requests.get(url=fhirServer_url_params, headers=requestHeaders, cert=fhirServer_cert_key, verify=('False'!=c[p['fhirServer']+'_verifySsl']), timeout=int(c[p['fhirServer']+'_timeout']))
             r_json = json.loads(r_raw.text) # single result page content
             if (r_json['resourceType'] == 'Bundle') and ('entry' in r_json):
                 for e in r_json['entry']:

@@ -8,7 +8,7 @@ The UKL-DIZApps provided here were developed by the Data Integration Center of t
 ![SMITH](./doc/smith001.png)
 </div>
 
-Current UKL-DIZApps release: 2022-12-19
+Current UKL-DIZApps release: 2022-12-20
 
 ## Description
 UKL-DIZApps is a tool collection for handling FHIR data without knowledge about scripting or software development. 
@@ -81,11 +81,14 @@ A deployment for Docker based usage of DIZApp01 will be available soon.
 ### Additional information
 DIZApp01 is provided including the 3rd party tools needed to start/use them: 
 - Python and 
-- Nginx. 
+- Nginx.
+You find subfolders for both tools in the root folder of the install folder.
 
 The core code of DIZApp01 is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
 
-Nginx is used to wrap SSL around the apps, so that secure access can be configured. 
+Nginx is used to wrap SSL around the app, so that secure access can be configured. You may also add additional authentication options and other restrictions to the nginx config.
+
+Towards the FHIR servers used, the DIZApp01 backend acts as an HTTP(S) client. So you can, for example, define username/password or client certificates for authenticating DIZApp01 to a FHIR server. See the section "Auth data" below in "Configuration".
 
 ## Configuration
 The DizApp01 subfolder contains a **dizapp01.conf** file. The configuration elements are named in a self explaining way. There are some comments provided to explaine the configuration.
@@ -148,8 +151,13 @@ For the configuration of the Nginx bundled here see the config files in the ngin
 Please adjust the Nginx config according to your needs. For example, you may want to configure authentification methods and certificates. For documentation see the Nginx pages in the Web.
 **CAUTION:** The predefined config provided here contains a self signed certificate-key-pair for the SSL connections. It is highly recommended to replace the certificate/key by your own trustworthy files. 
 
-#### Predefined auth data
-DizApp01 can be configured to use basic auth for authenticating to FHIR servers. Other methods will be provided in future releases. Login data can be entered to the GUI but may also be predefined. This may be useful when using the app in server mode.
+#### Auth data
+DizApp01 can be configured to use Basic Auth or Client Cert Auth to FHIR servers.
+
+- Login data for Basic Auth can be entered to the GUI but may also be predefined. 
+- Login data for Client Cert Auth can only be predefined. 
+
+Predefining auth data may especially be useful when using the app in server mode; it is mandatory when a FHIR server needs Client Cert Auth.
 The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want.  
 **CAUTION:** Be careful with the access rights of the predefined auth data! 
 
@@ -203,7 +211,6 @@ Parameters for the REST calls have to be provided via POST method.
 Please contact DIZ@medizin.uni-leipzig.de.
 
 ## TODO
-- Certificate based authentication to the FHIR Servers
 - Install package / helper apps for usage in Linux / Docker
 - <Tell us!> 
 

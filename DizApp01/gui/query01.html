@@ -1,33 +1,38 @@
 <div style="width: 100%;">
 <form method="post" action="/exec_fhir_query" target="_blank">
 <input type="hidden" id="newQuery" name="newQuery" value="newQuery"></input>
-<table>
+<table style="font-size: small;">
 <tr>
 <td valign="top"><table>
-<tr>
-<td>
+<tr><td>
 FHIR-Server:
-</td>
-<td colspan=3>
+</td><td>
 <select id="fhirServer" name="fhirServer" required style="">
 <dizapp01_ph01 />
 </select>
-</td>
-</tr>
+</td></tr>
+<tr><td></td><td>
+<table style="border-style: solid; border-width: 1px 1px 1px 1px;">
 <tr>
-<td valign="top">Login:</td>
-<td valign="top"><input type="text" id="fhirServerLogin" name="fhirServerLogin"></input></td>
-<td valign="top">Password:</td>
-<td valign="top"><input type="password" id="fhirServerPw" name="fhirServerPw"></input></td>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 0px 0px;">Login:</td>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 0px 0px;"><input type="text" id="fhirServerLogin" name="fhirServerLogin"></input></td>
+</tr><tr>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 1px 0px;">Password:</td>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 1px 0px;"><input type="password" id="fhirServerPw" name="fhirServerPw"></input></td>
 </tr>
+<!-- tr>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 0px 0px;">Client Certificate:</td>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 0px 0px;"><input type="file" id="fhirServerClientCert" name="fhirServerClientCert"></input></td>
+</tr></tr>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 1px 0px;">Client Key:</td>
+<td valign="top" style="border-style: solid; border-width: 0px 0px 1px 0px;"><input type="file" id="fhirServerClientKey" name="fhirServerClientKey"></input></td>
+</tr -->
 <tr>
 <td valign="top">Use Preset Login:</td>
 <td valign="top"><input type="checkbox" id="usePresetLogin" name="usePresetLogin"></input></td>
 </tr>
-<tr>
-<td valign="top">Page Size:</td>
-<td valign="top"><input type="number" min="0" max="1000" value="20" id="resultPageSize" name="resultPageSize"></input></td>
-</tr>
+</table>
+</td></tr>
 </table></td>
 <td><div style="width: 40px;"></div></td>
 <td><table>
@@ -47,6 +52,10 @@ FHIR-Server:
 <input type="radio" id="noExp" value="noExp" name="exportResultMode" checked></input><label for="noExp">No Export</label><br />
 <input type="radio" id="expPage" value="expPage" name="exportResultMode"></input><label for="expPage">Page Export</label><br />
 </td></tr>
+<tr>
+<td valign="top">Page Size:</td>
+<td valign="top"><input type="number" min="0" max="1000" value="20" id="resultPageSize" name="resultPageSize"></input></td>
+</tr>
 </table></td>
 <td valign="top"><table style="border-left: 1px solid black; border-right: 1px solid black;">
 <tr><td>Omit Meta Elements:</td><td><input type="checkbox" id="omitMeta" value="omitMeta" name="omitMeta"></input></td></tr>
@@ -67,8 +76,8 @@ FHIR-Server:
 </table></td>
 </tr>
 </table>
-<table style="width: 100%;">
-<tr><td style="width: 100%;">
+<table style="width: 100%; font-size: small;">
+<tr><td style="width: 100%; ">
 FHIR-Search-Parameter:
 </td></tr>
 <tr><td style="width: 100%;">
