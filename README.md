@@ -52,18 +52,18 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
 
 Other Apps will follow.
 
-## Installation and Running
+## Downloading and Running
 ### Downloading
 Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
 
+**CAUTION:** Be careful with the acess settings for the unpacked folder. Unintentional access to the app and its configuration may cause illegal access to your FHIR data.
+
 ### Running on Windows
 #### Simple Startup
-From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities.
+From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
-The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
-
-DizApp01.exe also kills the corresponding Python and Nginx processes when being closed itself. 
-CAUTION: This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
+Closing behaviour:  
+When being closed itself, DizApp01.exe also kills the corresponding Python and Nginx processes. This closing behaviour may fail on systems with a very high CPU load; Windows grants a 5 seconds period of time to finish the closing tasks. 
 
 #### Windows Service
 DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
