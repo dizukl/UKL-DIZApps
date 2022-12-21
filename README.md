@@ -1,8 +1,10 @@
 # UKL-DIZApps
 
-The UKL-DIZApps provided here were developed in a project granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D.
+The UKL-DIZApps provided here were developed by the Data Integration Center of the University of Leipzig Medical Center (Universitätsklinikum Leipzig AöR). The development is part of the project "SMITH - Medizininformatik-Konsortium - Beitrag Universitätsklinikum Leipzig" granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D. This grant was given within the Medical Informatics Initiative (MI-I) of the German government.
 
-Current release: 2022-12-19
+![UKL](./doc/ukl001.png) ![DIZ](./doc/diz001.jpg) ![SMITH](./doc/smith001.png)
+
+Current UKL-DIZApps release: 2022-12-19
 
 ## Description
 UKL-DIZApps is a tool collection for handling FHIR data without knowledge about scripting or software development. 
