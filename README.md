@@ -17,10 +17,8 @@ Currently there is one toolgroup provided with UKL-DIZApps.
 - **FST&sup2; - FHIR Search and Transformation Tool**  
 The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
 
-[[_TOC_]]
-
 ## Content
-- [FHIR Search and Transformation Tool (FST&sup2;)](#FHIR Search and Transformation Tool (FST&sup2;))
+- [FHIR Search and Transformation Tool (FST&sup2;)](#fhir-search-and-transformationtool-fst)
   * [Description](#description)
   * [Content](#content)
   * [Installation and Running](#installation-and-running)
@@ -35,12 +33,12 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
       - [3rd party tools](#3rd-party-tools)
       - [Security](#security)
   * [Configuration](#configuration)
-    + [Config for DizApp01](#config-for-dizapp01)
+    + [Config for FST&sup2;](#config-for-fst)
       - [Core config items](#core-config-items)
       - [Nginx config](#nginx-config)
       - [Auth data](#auth-data)
   * [Usage](#usage)
-    + [DIZApp01 - FHIR Query Tool](#dizapp01---fhir-query-tool)
+    + [FST&sup2; - FHIR Search and Transformation Tool](#fst---fhir-search-and-transformation-tool)
       - [Using the app with a web browser](#using-the-app-with-a-web-browser)
       - [Using the app REST interface with generic tools](#using-the-app-rest-interface-with-generic-tools)
   * [Support](#support)
@@ -52,7 +50,7 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
 UKL-DIZApps is a tool collection for handling FHIR data without knowledge about software creation. 
 
 Currently there is only one toolgroup provided with UKL-DIZApps. 
-- **DIZApp01 - FHIR Query Tool**  
+- **FST&sup2; - FHIR Search and Transformation Tool**  
 The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
 
 Other Apps will follow.
@@ -66,10 +64,10 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 #### Simple Startup
 From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
-DIZApp01 can be configured to run in **workstation mode** or **server mode** (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
+FST&sup2; can be configured to run in **workstation mode** or **server mode** (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
 
 #### Windows Service
-DizApp01 may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
+FST&sup2; may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
 
 The service can be installed and run using **DizApp01InstallService.exe**. To remove the service, use **DizApp01RemoveService.exe**. Alternatively, you may use your favorite other system management tools to install or remove the service.
 
@@ -79,20 +77,20 @@ DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 When being closed/stopped, DizApp01.exe and DizApp01Service.exe also stop their subprocesses for Python and Nginx. This stopping behaviour may fail on systems with a very high CPU load; usually Windows grants a 5 seconds period of time before running into a timeout. 
 
 ### Running on Linux
-A deployment for Linux based usage of DIZApp01 will be available soon.
+A deployment for Linux based usage of FST&sup2; will be available soon.
 
 ### Running on Docker
-A deployment for Docker based usage of DIZApp01 will be available soon.
+A deployment for Docker based usage of FST&sup2; will be available soon.
 
 ### Additional information
 #### 3rd party tools
-DIZApp01 is provided including the 3rd party tools needed to start/use them: 
+FST&sup2; is provided including the 3rd party tools needed to start/use them: 
 - Python and 
 - Nginx.
 
 You find subfolders for both tools in the root folder of the install folder.
 
-The core code of DIZApp01 is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
+The core code of FST&sup2; is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
 
 #### Security
 Nginx is used to wrap SSL around the app, so that secure access can be configured. You may also add additional authentication options and other restrictions to the nginx config. See the Nginx documentation in the web for further information.
@@ -104,7 +102,7 @@ The DizApp01 subfolder contains a **dizapp01.conf** file. The configuration elem
 
 If you change the configuration while the app / the service is running, restart it to apply the changes.
 
-### Config for DizApp01
+### Config for FST&sup2;
 #### Core config items
 ```
 # App Server Settings
@@ -172,7 +170,7 @@ Predefining auth data may especially be useful when using the app in server mode
 
 ## Usage
 
-### DIZApp01 - FHIR Query Tool
+### FST&sup2; - FHIR Search and Transformation Tool
 The app runs FHIR search queries to FHIR servers that are configured in the app config (see above).
 
 When installed and started (see section "Installation and Running"), the app acts as a web service that can be accessed via up-to-date web browsers or other REST enabled tools like Postman.
@@ -227,5 +225,5 @@ Please contact DIZ@medizin.uni-leipzig.de.
 We are open to contributions from our partners within the SMITH consortium and the Medical Informatics Initiative (MII). Please contact us via DIZ@medizin.uni-leipzig.de to discuss and arrange contributions together. 
 
 ## License
-UKL-DIZApps code and config files are licensed with the GNU GENERAL PUBLIC LICENSE.
+UKL-DIZApps - including FST&sup2; - code and config files are licensed with the GNU GENERAL PUBLIC LICENSE.
 For additional tools bundled with UKL-DIZApps (Python, Nginx) see their separate license files.
