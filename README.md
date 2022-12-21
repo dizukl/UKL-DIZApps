@@ -64,9 +64,9 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
 #### Windows Service
-DizApp01 may be executed as a Windows service. The root folder contains a **DizApp01Service.exe**. 
+DizApp01 may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
 
-The service can be installed and run using the **DizApp01InstallService.exe** tool. To remove the service use the **DizApp01RemoveService.exe** tool. Alternatively, you may use your favorite other system management tools to install or remove the service.
+The service can be installed and run using **DizApp01InstallService.exe**. To remove the service, use **DizApp01RemoveService.exe**. Alternatively, you may use your favorite other system management tools to install or remove the service.
 
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
