@@ -2,12 +2,12 @@
 
 The UKL-DIZApps provided here were developed by the Data Integration Center of the University of Leipzig Medical Center (Universitätsklinikum Leipzig AöR). The development is part of the project "SMITH - Medizininformatik-Konsortium - Beitrag Universitätsklinikum Leipzig" granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D. This grant was given within the Medical Informatics Initiative (MI-I) of the German government.
 
-<table style="width: 100%; border: 0">
+<table style="width: 100%; border: 0" border=0>
 <tr>
 <td style="width: 33%; border: 0">
 ![UKL](./doc/ukl001.png)
 </td>
-<td style="width: 33%; border: 0">
+<td style="width: 33%; border: 0" border=0>
 ![DIZ](./doc/diz001.jpg)
 </td>
 <td style="width: 33%; border: 0">
