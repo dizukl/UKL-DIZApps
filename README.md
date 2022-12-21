@@ -70,7 +70,7 @@ The service can be installed and run using **DizApp01InstallService.exe**. To re
 DizApp01InstallService.exe and DizApp01RemoveService.exe run without parameters.
 
 #### Stopping Behaviour
-When being closed/stopped, DizApp01.exe and DizApp01Service.exe also stop their corresponding Python and Nginx processes. This stopping behaviour may fail on systems with a very high CPU load; usually Windows grants a 5 seconds period of time before running into a timeout. 
+When being closed/stopped, DizApp01.exe and DizApp01Service.exe also stop their subprocesses for Python and Nginx. This stopping behaviour may fail on systems with a very high CPU load; usually Windows grants a 5 seconds period of time before running into a timeout. 
 
 ### Running on Linux
 A deployment for Linux based usage of DIZApp01 will be available soon.
