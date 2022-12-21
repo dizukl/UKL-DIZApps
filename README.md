@@ -26,6 +26,7 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
     + [Running on Windows](#running-on-windows)
       - [Simple Startup](#simple-startup)
       - [Windows Service](#windows-service)
+      - [Stopping Behaviour](#stopping-behaviour)
     + [Running on Linux](#running-on-linux)
     + [Running on Docker](#running-on-docker)
     + [Additional information](#additional-information)
