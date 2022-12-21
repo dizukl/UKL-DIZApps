@@ -14,6 +14,7 @@ The UKL-DIZApps provided here were developed by the Data Integration Center of t
 ![SMITH](./doc/smith001.png)
 </td>
 </tr>
+</table>
 
 Current UKL-DIZApps release: 2022-12-19
 
