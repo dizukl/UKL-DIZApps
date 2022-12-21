@@ -15,7 +15,9 @@ UKL-DIZApps is a tool collection for handling FHIR data without knowledge about 
 
 Currently there is one toolgroup provided with UKL-DIZApps. 
 - **FST&sup2; - FHIR Search and Transformation Tool**  
-The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
+The app runs FHIR Search queries. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. 
+
+For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
 
 ## Content
 - [UKL-DIZApps - FHIR Search and Transformation Tool (FST&sup2;)](#ukl-dizapps-fhir-search-and-transformation-tool-fst)
