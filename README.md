@@ -56,7 +56,7 @@ Other Apps will follow.
 ## Downloading and Running
 ### Downloading
 Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.  
-**CAUTION:** Be careful with the acess settings for the unpacked folder. Unintentional access to the app and its configuration may cause illegal access to your FHIR data.
+**CAUTION:** Be careful with the acess settings for the unpacked folder. Inappropriate access to the app and its configuration may cause illegal access to your FHIR data.
 
 ### Running on Windows
 #### Simple Startup
