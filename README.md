@@ -4,13 +4,13 @@ The UKL-DIZApps provided here were developed by the Data Integration Center of t
 
 <table style="width: 100%; border: none">
 <tr>
-<td style="width: 33%">
+<td style="width: 33%; border: none">
 ![UKL](./doc/ukl001.png)
 </td>
-<td style="width: 33%">
+<td style="width: 33%; border: none">
 ![DIZ](./doc/diz001.jpg)
 </td>
-<td style="width: 33%">
+<td style="width: 33%; border: none">
 ![SMITH](./doc/smith001.png)
 </td>
 </tr>
