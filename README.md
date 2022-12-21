@@ -30,6 +30,8 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
     + [Running on Linux](#running-on-linux)
     + [Running on Docker](#running-on-docker)
     + [Additional information](#additional-information)
+      - [3rd party tools](#3rd-party-tools)
+
   * [Configuration](#configuration)
     + [Config for DizApp01](#config-for-dizapp01)
       - [Core config items](#core-config-items)
@@ -81,14 +83,17 @@ A deployment for Linux based usage of DIZApp01 will be available soon.
 A deployment for Docker based usage of DIZApp01 will be available soon.
 
 ### Additional information
+#### 3rd party tools
 DIZApp01 is provided including the 3rd party tools needed to start/use them: 
 - Python and 
-- Nginx.  
+- Nginx.
+
 You find subfolders for both tools in the root folder of the install folder.
 
 The core code of DIZApp01 is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
 
-Nginx is used to wrap SSL around the app, so that secure access can be configured. You may also add additional authentication options and other restrictions to the nginx config.
+#### Security
+Nginx is used to wrap SSL around the app, so that secure access can be configured. You may also add additional authentication options and other restrictions to the nginx config. See the Nginx documentation in the web for further information.
 
 Towards the FHIR servers used, the DIZApp01 backend acts as an HTTP(S) client. So you can, for example, define username/password or client certificates for authenticating DIZApp01 to a FHIR server. See the section "Auth data" below in "Configuration".
 
