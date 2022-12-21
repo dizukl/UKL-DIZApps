@@ -1,4 +1,4 @@
-# UKL-DIZApps
+# FHIR Search and Transformation Tool (FST&sup2;)
 
 The UKL-DIZApps provided here were developed by the Data Integration Center of the University of Leipzig Medical Center (Universitätsklinikum Leipzig AöR). The development is part of the project "SMITH - Medizininformatik-Konsortium - Beitrag Universitätsklinikum Leipzig" granted by the Federal Ministry of Education and Research with grant no. 01ZZ1803D. This grant was given within the Medical Informatics Initiative (MI-I) of the German government.
 
@@ -14,11 +14,13 @@ Current UKL-DIZApps release: 2022-12-20
 UKL-DIZApps is a tool collection for handling FHIR data without knowledge about scripting or software development. 
 
 Currently there is one toolgroup provided with UKL-DIZApps. 
-- **DIZApp01 - FHIR Query Tool**  
+- **FST&sup2; - FHIR Search and Transformation Tool**  
 The app runs FHIR Search queries to FHIR server that are configured in the app config. The query results can be provided in different formats (FHIR json, structured HTML, flat tables). The app can be used via its web GUI or via its REST interface. For information about FHIR Search see [https://hl7.org/fhir/search.html](https://hl7.org/fhir/search.html).
 
+[[__TOC__]]
+
 ## Content
-- [UKL-DIZApps](#ukl-dizapps)
+- [FHIR Search and Transformation Tool (FST&sup2;)](#FHIR Search and Transformation Tool (FST&sup2;))
   * [Description](#description)
   * [Content](#content)
   * [Installation and Running](#installation-and-running)
@@ -36,7 +38,7 @@ The app runs FHIR Search queries to FHIR server that are configured in the app c
     + [Config for DizApp01](#config-for-dizapp01)
       - [Core config items](#core-config-items)
       - [Nginx config](#nginx-config)
-      - [Predefined auth data](#predefined-auth-data)
+      - [Auth data](#auth-data)
   * [Usage](#usage)
     + [DIZApp01 - FHIR Query Tool](#dizapp01---fhir-query-tool)
       - [Using the app with a web browser](#using-the-app-with-a-web-browser)
