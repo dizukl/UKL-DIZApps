@@ -62,7 +62,7 @@ Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download fo
 #### Simple Startup
 From the folder you unpacked the archive to just start the **DizApp01.exe** file. See below for the configuration opportunities. The DizApp01.exe file is a Windows console app that starts all components needed, including the Python environment and the Nginx server bundled here. 
 
-DIZApp01 can be configured to run in workstation mode or server mode (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
+DIZApp01 can be configured to run in **workstation mode** or **server mode** (see section "Configuration" below). Workstation mode is the default setting. In this mode, after starting the server engine, the default webbrowser of the current user is called with the start page of the app.
 
 #### Windows Service
 DizApp01 may be executed as a Windows service. Use the **DizApp01Service.exe** as service executable. 
@@ -83,7 +83,7 @@ A deployment for Docker based usage of DIZApp01 will be available soon.
 ### Additional information
 DIZApp01 is provided including the 3rd party tools needed to start/use them: 
 - Python and 
-- Nginx.
+- Nginx.  
 You find subfolders for both tools in the root folder of the install folder.
 
 The core code of DIZApp01 is written in Python. From the Python environment that is bundled here some unnecessary components have been removed. 
