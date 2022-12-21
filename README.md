@@ -56,7 +56,6 @@ Other Apps will follow.
 ## Downloading and Running
 ### Downloading
 Choose an archive file (**DIZApp01_\<timestamp\>.\<ext\>**) from the download folder of the UKL-DIZApps repository, download it and unpack it to a location of your choice.
-
 **CAUTION:** Be careful with the acess settings for the unpacked folder. Unintentional access to the app and its configuration may cause illegal access to your FHIR data.
 
 ### Running on Windows
@@ -147,12 +146,12 @@ csvExportApplyUtf8BomTag: True
 For the configuration of the Nginx bundled here see the config files in the nginx folder. For example, the predefined config provided here defines port 8070 for listening.
 
 Please adjust the Nginx config according to your needs. For example, you may want to configure authentification methods and certificates. For documentation see the Nginx pages in the Web.
-
 **CAUTION:** The predefined config provided here contains a self signed certificate-key-pair for the SSL connections. It is highly recommended to replace the certificate/key by your own trustworthy files. 
 
 #### Predefined auth data
 DizApp01 can be configured to use basic auth for authenticating to FHIR servers. Other methods will be provided in future releases. Login data can be entered to the GUI but may also be predefined. This may be useful when using the app in server mode.
-The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want.  **CAUTION:** Be careful with the access rights! 
+The DizApp01 folder contains a subfolders named sec. There you find files to store the predefined auth data - if you want.  
+**CAUTION:** Be careful with the access rights of the predefined auth data! 
 
 ## Usage
 
